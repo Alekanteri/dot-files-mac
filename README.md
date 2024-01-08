@@ -1,1 +1,1 @@
-# lunarVim-cfg
+# Dot files
