@@ -1,5 +1,6 @@
 local formatter = require("lvim.lsp.null-ls.formatters")
 local lsp = require("lvim.lsp.manager");
+local colorizer = require("colorizer")
 
 vim.opt.wrap = true
 vim.opt.relativenumber = true
@@ -10,6 +11,23 @@ lvim.transparent_window = true
 lvim.format_on_save = true
 
 lsp.setup("emmet_ls")
+
+
+colorizer.setup({
+  "*",
+}, {
+  names = true,
+  rgb_fn = true,
+  RGB = true,
+  RRGGBB = true,
+  RRGGBBAA = true,
+  hsl_fn = true,
+  css = true,
+  css_fn = true,
+  mode = "background"
+}
+)
+
 
 formatter.setup {
   {
@@ -32,6 +50,7 @@ formatter.setup {
 lvim.plugins = {
   { "lunarvim/colorschemes" },
   { "folke/tokyonight.nvim" },
+  { "norcalli/nvim-colorizer.lua" },
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
