@@ -10,6 +10,11 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 
+if vim.g.neovide then
+	vim.g.neovide_transparency = 0.9
+	vim.opt.guifont = { "JetBrainsMono Nerd Font", ":h12" }
+end
+
 vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 vim.opt.rtp:prepend(lazypath)
 
@@ -115,8 +120,8 @@ require("lazy").setup({
 	"nvim-treesitter/nvim-treesitter",
 	"aca/emmet-ls",
 	"windwp/nvim-ts-autotag",
-	{ "akinsho/toggleterm.nvim", version = "*", config = true },
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{ "akinsho/toggleterm.nvim",             version = "*", config = true },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl",  opts = {} },
 	{
 		"numToStr/Comment.nvim",
 		lazy = false,
@@ -156,11 +161,11 @@ require("lazy").setup({
 		ft = "markdown",
 
 		keys = {
-			{ "<leader>on", "<cmd>ObsidianNew<cr>", desc = "New Obsidian note", mode = "n" },
-			{ "<leader>oo", "<cmd>ObsidianSearch<cr>", desc = "Search Obsidian notes", mode = "n" },
-			{ "<leader>os", "<cmd>ObsidianQuickSwitch<cr>", desc = "Quick Switch", mode = "n" },
-			{ "<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Show location list of backlinks", mode = "n" },
-			{ "<leader>ot", "<cmd>ObsidianTemplate<cr>", desc = "Follow link under cursor", mode = "n" },
+			{ "<leader>on", "<cmd>ObsidianNew<cr>",         desc = "New Obsidian note",               mode = "n" },
+			{ "<leader>oo", "<cmd>ObsidianSearch<cr>",      desc = "Search Obsidian notes",           mode = "n" },
+			{ "<leader>os", "<cmd>ObsidianQuickSwitch<cr>", desc = "Quick Switch",                    mode = "n" },
+			{ "<leader>ob", "<cmd>ObsidianBacklinks<cr>",   desc = "Show location list of backlinks", mode = "n" },
+			{ "<leader>ot", "<cmd>ObsidianTemplate<cr>",    desc = "Follow link under cursor",        mode = "n" },
 		},
 		dependencies = {
 			"nvim-lua/plenary.nvim",

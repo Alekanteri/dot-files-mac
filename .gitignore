@@ -1,7 +1,8 @@
-/qBittorrent/*
-/xnviewmp/*
-/yarn/*
-/zed/*
+/qBittorrent
+/xnviewmp
+/yarn
+/zed
 */*/*.DS_Store
-/iterm2/*
+/iterm2
 /fish/fish_variables
+/.vscode
