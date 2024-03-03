@@ -20,7 +20,7 @@ starship init fish | source
 zoxide init fish | source
 
 # pnpm
-set -gx PNPM_HOME "/Users/avetisovaleksandr/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end

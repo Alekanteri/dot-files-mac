@@ -3,3 +3,5 @@
 /yarn/*
 /zed/*
 */*/*.DS_Store
+/iterm2/*
+/fish/fish_variables
