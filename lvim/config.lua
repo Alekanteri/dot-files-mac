@@ -1,5 +1,4 @@
 local formatter = require("lvim.lsp.null-ls.formatters")
-<<<<<<< HEAD
 local lsp = require("lvim.lsp.manager");
 local colorizer = require("colorizer")
 
@@ -7,7 +6,6 @@ vim.opt.wrap = true
 vim.opt.relativenumber = true
 
 lvim.keys.insert_mode["jk"] = "<esc>"
-=======
 local lsp = require("lvim.lsp.manager")
 local colorizer = require("colorizer")
 
@@ -25,17 +23,11 @@ vim.g.tabby_keybinding_accept = '<Tab>'
 
 lvim.keys.insert_mode["jk"] = "<esc>"
 lvim.keys.normal_mode["<leader>z"] = "<cmd>ZenMode<cr>"
->>>>>>> 52c3f04 (nvim config)
 lvim.colorscheme = "tokyonight"
 lvim.transparent_window = true
 lvim.format_on_save = true
 
 lsp.setup("emmet_ls")
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 52c3f04 (nvim config)
 colorizer.setup({
   "*",
 }, {
@@ -51,10 +43,6 @@ colorizer.setup({
 }
 )
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 52c3f04 (nvim config)
 formatter.setup {
   {
     name = "prettier",
@@ -74,27 +62,20 @@ formatter.setup {
 }
 
 lvim.plugins = {
-<<<<<<< HEAD
   { "lunarvim/colorschemes" },
   { "folke/tokyonight.nvim" },
   { "norcalli/nvim-colorizer.lua" },
-=======
   { "folke/zen-mode.nvim" },
   { "lunarvim/colorschemes" },
   { "folke/tokyonight.nvim" },
   { "ellisonleao/gruvbox.nvim" },
   { "sainnhe/everforest" },
   { 'TabbyML/vim-tabby' },
->>>>>>> 52c3f04 (nvim config)
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
     build = function() vim.fn["mkdp#util#install"]() end,
-<<<<<<< HEAD
-  }
-}
-=======
   },
   { "norcalli/nvim-colorizer.lua" },
   {
@@ -122,6 +103,4 @@ lvim.plugins = {
     },
   },
 }
-
 require("obsidian_config")
->>>>>>> 52c3f04 (nvim config)
