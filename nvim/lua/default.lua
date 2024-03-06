@@ -15,12 +15,13 @@ vim.opt.autoread = true
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.bo.autoread = true
+vim.opt.clipboard = "unnamedplus"
 
 vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function()
-		vim.highlight.on_yank({
-			higroup = "incSearch",
-			timeout = 100,
-		})
-	end,
+  callback = function()
+    vim.highlight.on_yank({
+      higroup = "incSearch",
+      timeout = 100,
+    })
+  end,
 })
