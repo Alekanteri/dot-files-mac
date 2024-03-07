@@ -157,6 +157,14 @@ require("lazy").setup({
       require("alpha").setup(require("alpha.themes.dashboard").config)
     end,
   },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end,
+  }
 })
 
 vim.cmd([[colorscheme tokyonight]])
@@ -180,3 +188,4 @@ require("colorizer_config")
 require("obsidian_config")
 require("alpha_config")
 require("lsp_config")
+require("whichkey_config")

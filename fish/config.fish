@@ -1,7 +1,4 @@
 alias lsa="exa --header --long --icons"
-alias 7zip="7zz x '*.zip' -o'*' && rm -fr *.zip"
-alias 7rar="7zz x '*.rar' -o'*' && rm -fr *.rar"
-alias 77z="7zz x '*.7z' -o'*' && rm -fr *.7z"
 alias lsa="exa --all --header --long --icons"
 alias 7zip="7zz x '*.zip' -o'*' && rm -fr *.zip"
 alias 7rar="7zz x '*.rar' -o'*' && rm -fr *.rar"
