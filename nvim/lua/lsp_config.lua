@@ -8,7 +8,7 @@ require("lspsaga").setup({
 vim.keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<cr>")
 vim.keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<cr>")
 vim.keymap.set("n", "<leader>o", "<cmd>Lspsaga outline<cr>")
-vim.keymap.set("n", "<space>k", "<cmd>Lspsaga hover_doc<cr>", { silent = true })
+vim.keymap.set("n", "<leader>k", "<cmd>Lspsaga hover_doc<cr>", { silent = true })
 local builtin = require("telescope.builtin")
 
 vim.api.nvim_create_autocmd("LspAttach", {
