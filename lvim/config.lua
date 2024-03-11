@@ -2,13 +2,6 @@ local formatter = require("lvim.lsp.null-ls.formatters")
 local lsp = require("lvim.lsp.manager");
 local colorizer = require("colorizer")
 
-vim.opt.wrap = true
-vim.opt.relativenumber = true
-
-lvim.keys.insert_mode["jk"] = "<esc>"
-local lsp = require("lvim.lsp.manager")
-local colorizer = require("colorizer")
-
 require("tokyonight").setup({
   style = "night",
   styles = {
