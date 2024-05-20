@@ -7,4 +7,4 @@ kmap.set("n", "<leader>w", "<cmd>w<cr>")
 
 kmap.set("i", "jk", "<esc>")
 kmap.set("n", "<leader>h", "<cmd>noh<cr>")
-kmap.set("n", "<leader>gg", "<cmd>LazyGit<cr>")
+kmap.set("n", "<leader>gg", "<cmd>lazyGit<cr>")

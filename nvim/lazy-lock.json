@@ -71,10 +71,6 @@
     "branch": "main",
     "commit": "aedcd79811d491b60d0a6577a9c1701063c2a609"
   },
-  "lazygit.nvim": {
-    "branch": "main",
-    "commit": "10a5f30536dc2d4abe36d410d83149272ea457fa"
-  },
   "legendary.nvim": {
     "branch": "master",
     "commit": "8277e7ffbde3d32cc582e81b5d109f4071bbbc4b"

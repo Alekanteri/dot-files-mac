@@ -53,19 +53,6 @@ require("lazy").setup({
   { "SirVer/ultisnips" },
   { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
   {
-    "kdheepak/lazygit.nvim",
-    cmd = {
-      "LazyGit",
-      "LazyGitConfig",
-      "LazyGitCurrentFile",
-      "LazyGitFilter",
-      "LazyGitFilterCurrentFile",
-    },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-  },
-  {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -165,6 +152,7 @@ require("lazy").setup({
       vim.o.timeoutlen = 300
     end,
   },
+  { 'kdheepak/lazygit.nvim' },
   { "TabbyML/vim-tabby" },
 })
 
