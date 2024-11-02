@@ -20,10 +20,5 @@ zoxide init fish | source
 # pnpm
 set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
 end
-
-# Setting PATH for Python 3.12
-# The original version is saved in /Users/avetisovaleksandr/.config/fish/config.fish.pysave
-set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
-set -x PATH "$HOME/flutter/bin" "$PATH"

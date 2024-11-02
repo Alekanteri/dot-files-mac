@@ -1,8 +1,8 @@
 require("obsidian").setup({
   workspaces = {
     {
-      name = "Notes",
-      path = "$HOME/Documents/Obsidian Vault",
+      name = "Obsidian Vault",
+      path = "/Users/avetisovaleksandr/Documents/Obsidian Vault",
     },
   },
   completion = {
@@ -82,7 +82,7 @@ require("obsidian").setup({
   end,
 
   templates = {
-    subdir = "Templates",
+    subdir = "templates",
     date_format = "%Y-%m-%d-%a",
     time_format = "%H:%M",
     tags = "",

@@ -9,17 +9,17 @@ require("mason").setup({
 })
 require("mason-lspconfig").setup()
 
-require("mason-lspconfig").setup_handlers {
+require("mason-lspconfig").setup_handlers({
   function(server_name)
-    require("lspconfig")[server_name].setup {}
+    require("lspconfig")[server_name].setup({})
   end,
 
   ["rust_analyzer"] = function()
-    require("rustaceanvim").setup {}
+    require("rustaceanvim").setup({})
   end,
 
   ["tailwindcss"] = function()
-    require("lspconfig").tailwindcss.setup {}
+    require("lspconfig").tailwindcss.setup({})
   end,
 
   ["tsserver"] = function()
@@ -30,35 +30,33 @@ require("mason-lspconfig").setup_handlers {
     vim.keymap.set("n", "<leader>ta", "<cmd>TSToolsFixAll<cr>")
 
     local api = require("typescript-tools.api")
-    require("typescript-tools").setup {
+    require("typescript-tools").setup({
       handlers = {
-        ["textDocument/publishDiagnostics"] = api.filter_diagnostics(
-          { 6133 }
-        ),
+        ["textDocument/publishDiagnostics"] = api.filter_diagnostics({ 6133 }),
       },
-    }
+    })
   end,
 
   ["html"] = function()
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-    require 'lspconfig'.html.setup {
+    require("lspconfig").html.setup({
       capabilities = capabilities,
-    }
+    })
   end,
 
   ["emmet_ls"] = function()
-    require 'lspconfig'.emmet_ls.setup {}
+    require("lspconfig").emmet_ls.setup({})
   end,
 
   ["cssls"] = function()
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-    require 'lspconfig'.cssls.setup {
+    require("lspconfig").cssls.setup({
       capabilities = capabilities,
-    }
+    })
   end,
 
   ["lua_ls"] = function()
@@ -87,4 +85,4 @@ require("mason-lspconfig").setup_handlers {
       end,
     })
   end,
-}
+})

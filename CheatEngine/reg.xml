@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLReg>
+  <Key Name="HKEY_CURRENT_USER">
+    <Key Name="Software">
+      <Key Name="Cheat Engine">
+        <Value Name="Init" Type="2">123</Value>
+        <Key Name="Hexview"/>
+        <Key Name="MonoExtension"/>
+        <Value Name="First Time User" Type="1">0</Value>
+        <Key Name="Window Positions 96">
+          <Value Name="frmSelectionList Position" Type="2">400100003302000039010000E8000000</Value>
+          <Value Name="ProcessWindow Position" Type="2">FB0000003F0200002201000099010000000000000000000000000000</Value>
+          <Value Name="Comments Position" Type="2">41010000280200004F01000001010000</Value>
+          <Value Name="AdvancedOptions Position" Type="2">2A010000B20100003B0200002F010000</Value>
+          <Value Name="MainForm Position" Type="2">95000000320100003C0300006502000029000000A0000000870000004E000000102700007B0100007A000000</Value>
+          <Value Name="frmLuaTableScript Position" Type="2">25010000F8010000AF01000039010000</Value>
+          <Value Name="MainForm" Type="2">95000000320100003C0300006502000029000000A0000000870000004E000000102700007B0100007A000000</Value>
+        </Key>
+        <Key Name="Ignored Exceptions"/>
+      </Key>
+    </Key>
+    <Key Name="Cookies"/>
+  </Key>
+</XMLReg>
